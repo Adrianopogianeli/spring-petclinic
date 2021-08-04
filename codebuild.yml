@@ -72,7 +72,6 @@ Resources:
                   - logs:CreateLogGroup
                   - logs:CreateLogStream
                   - logs:PutLogEvents
-                  - ecr:GetAuthorizationToken
         - PolicyName: ecr
           PolicyDocument:
             Version: 2012-10-17
@@ -81,9 +80,3 @@ Resources:
                 Effect: Allow
                 Action:
                   - ecr:*
-
- 
-
-                
-
-
