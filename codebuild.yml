@@ -80,3 +80,4 @@ Resources:
                 Effect: Allow
                 Action:
                   - ecr:*
+                  - sts:GetServiceBearerToken
