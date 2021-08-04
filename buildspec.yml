@@ -17,7 +17,7 @@ phases:
   post_build:
     commands:
       - $(aws ecr get-login --region $AWS_REGION --no-include-email)
-      - aws ecr describe-repositories --registry-id ${AWS_AAC} --repository-name ${REPO}
+      - aws ecr describe-repositories --registry-id ${AWS_ACC} --repository-name ${REPO}
       - docker push $REPOSITORY_URI/${REPO}:latest
       - echo post_Build complete on date `date`
 artifacts:
